@@ -1,0 +1,11 @@
+<form [formGroup]="profileform" (submit)="onSubmit()">
+    <label for="">
+        first Name
+        <input type="text" formControlName="firstName">
+    </label>
+    <label for="">
+        Second Name
+        <input type="text" formControlName="lastname">
+    </label>
+    <button type="submit" [disabled]="!profileform.valid">Submit</button>
+</form>
